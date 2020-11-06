@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/among-us-front/static/css/main.2d2f4353.chunk.css",
+    "main.js": "/among-us-front/static/js/main.24ce6232.chunk.js",
+    "main.js.map": "/among-us-front/static/js/main.24ce6232.chunk.js.map",
+    "runtime-main.js": "/among-us-front/static/js/runtime-main.8b21c7bc.js",
+    "runtime-main.js.map": "/among-us-front/static/js/runtime-main.8b21c7bc.js.map",
+    "static/js/2.127541d5.chunk.js": "/among-us-front/static/js/2.127541d5.chunk.js",
+    "static/js/2.127541d5.chunk.js.map": "/among-us-front/static/js/2.127541d5.chunk.js.map",
+    "static/js/3.088a61ca.chunk.js": "/among-us-front/static/js/3.088a61ca.chunk.js",
+    "static/js/3.088a61ca.chunk.js.map": "/among-us-front/static/js/3.088a61ca.chunk.js.map",
+    "index.html": "/among-us-front/index.html",
+    "static/css/main.2d2f4353.chunk.css.map": "/among-us-front/static/css/main.2d2f4353.chunk.css.map",
+    "static/js/2.127541d5.chunk.js.LICENSE.txt": "/among-us-front/static/js/2.127541d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b21c7bc.js",
+    "static/js/2.127541d5.chunk.js",
+    "static/css/main.2d2f4353.chunk.css",
+    "static/js/main.24ce6232.chunk.js"
+  ]
+}
