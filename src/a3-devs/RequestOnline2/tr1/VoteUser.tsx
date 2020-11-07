@@ -18,7 +18,7 @@ export const VoteUser: React.FC<VoteUserPropsType> = ({onClick, userColor, userN
                 <div className={style.userVoteColors}>
                     {voteUsers.map(u => <div className={style.userWhoVotes} style={{backgroundColor: `${u}`}}/>)}
                 </div>
-                <button className={style.userButton} onClick={onClick}>click</button>
+                <button className={style.userButton} onClick={onClick}>kick</button>
             </div>
         </div>
     </>
