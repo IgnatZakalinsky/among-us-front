@@ -11,7 +11,6 @@ type Tr4PropsType = {
 // компонента для проверки таски
 const Tr4 = (props: Tr4PropsType) => {
 
-
     return (
         <>
             <div><input onChange={props.onChange}/></div>
