@@ -1,0 +1,28 @@
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.userBody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 99%;
+    background-color: antiquewhite;
+}
+
+.userColor {
+    height: 50px;
+    width: 300px;
+}
+
+.userName {
+    height: 50px;
+    width: 300px;
+    background-color: skyblue;
+}
