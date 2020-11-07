@@ -1,7 +1,7 @@
 import React from 'react';
 
 type AmazingInputPropsType = {
-    onChange: () => void
+    onChange: (e:any) => void
     placeholder: string
     value: string
 

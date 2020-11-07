@@ -8,5 +8,11 @@
 }
 .header {
 display: flex;
-
+    margin-left:auto
+}
+.header gameName {
+    margin-left:auto
+}
+.header version {
+    margin-right:auto
 }
