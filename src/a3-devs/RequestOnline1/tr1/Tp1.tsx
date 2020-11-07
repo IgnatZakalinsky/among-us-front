@@ -1,5 +1,5 @@
 import React from 'react'
-import AmazingButton from './AmazingButton'
+import AmazingButton from './components/AmazingButton'
 
 // компонента для проверки таски
 const Tp1 = () => {
@@ -7,7 +7,7 @@ const Tp1 = () => {
 
     return (
         <>
-            <AmazingButton onClick={testOnClick}>xxx</AmazingButton>
+            {/*<AmazingButton onClick={testOnClick}>xxx</AmazingButton>*/}
         </>
     )
 }
