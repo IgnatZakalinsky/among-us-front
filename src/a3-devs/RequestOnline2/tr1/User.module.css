@@ -16,13 +16,25 @@
     background-color: antiquewhite;
 }
 
-.userColor {
+.userColorName {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 50px;
     width: 300px;
 }
 
-.userName {
+.userVoteColors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 50px;
     width: 300px;
-    background-color: skyblue;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.userWhoVotes {
+    height: 20px;
+    width: 20px;
 }
