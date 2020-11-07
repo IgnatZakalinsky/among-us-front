@@ -3,22 +3,24 @@ import style from './User.module.css'
 
 
 type VoteUserPropsType = {
-    onClick: () => void
+    id: string
+    kickHandler: () => void
     userColor: string
     userName: string
-    voteUsers: Array<string>
+    votes: Array<string>
 }
 
 
-export const VoteUser: React.FC<VoteUserPropsType> = ({onClick, userColor, userName, voteUsers}) => {
+export const VoteUser: React.FC<VoteUserPropsType> = ({id, kickHandler, userColor, userName, votes}) => {
     return <>
         <div className={style.user}>
             <div className={style.userBody}>
                 <div className={style.userColorName} style={{backgroundColor: `${userColor}`}}>{userName}</div>
                 <div className={style.userVoteColors}>
-                    {voteUsers.map(u => <div className={style.userWhoVotes} style={{backgroundColor: `${u}`}}/>)}
+                    {votes.map(color => <div key={color} className={style.userWhoVotes} style={{backgroundColor: `${color}`}}/>)}
                 </div>
-                <button className={style.userButton} onClick={onClick}>click</button>
+                <button className={style.userButton} onClick={kickHandler}>kick</button>
+                {/*<button className={style.userButton} onClick={kickHandler(id, voteUserId)}>kick</button>*/}
             </div>
         </div>
     </>
