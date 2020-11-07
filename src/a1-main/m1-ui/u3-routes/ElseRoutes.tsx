@@ -5,6 +5,8 @@ import RequestOnline1 from '../../../a3-devs/RequestOnline1/RequestOnline1';
 import RequestOnline2 from '../../../a3-devs/RequestOnline2/RequestOnline2'
 import { RequestOnline6 } from '../../../a3-devs/RequestOnline6/RequestOnline6'
 import BackOffline9 from '../../../a3-devs/BackOffline9/BackOffline9'
+import RequestOnline5 from "../../../a3-devs/RequestOnline5/RequestOnline5";
+
 
 export const ELSE_PATH = [
     {path: '/BackOffline1', Component: BackOffline1},
@@ -13,6 +15,7 @@ export const ELSE_PATH = [
     {path: '/RequestOnline6', Component: RequestOnline6},
     {path: '/BackOffline9', Component: BackOffline9},
 
+    {path: '/RequestOnline5', Component: RequestOnline5},
     // добавить в массив себя
 
 ]
