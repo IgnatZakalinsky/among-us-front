@@ -7,7 +7,7 @@ const Tp1 = () => {
 
     return (
         <>
-            {/*<AmazingButton onClick={testOnClick}>xxx</AmazingButton>*/}
+            <AmazingButton type={'submit'} onClick={testOnClick}>xxx</AmazingButton>
         </>
     )
 }

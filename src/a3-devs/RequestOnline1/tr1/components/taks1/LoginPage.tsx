@@ -17,8 +17,8 @@ const LoginAuthPage = (props: LoginAuthPagePropsType) => {
     return (
         <div className={st.wrapper}>
             <div className={st.header}>
-                <span>Among Us</span>
-                <span>v1</span>
+                <div>Among Us</div>
+                <div>v1</div>
             </div>
 
             <span>Введите ваше имя:</span>
