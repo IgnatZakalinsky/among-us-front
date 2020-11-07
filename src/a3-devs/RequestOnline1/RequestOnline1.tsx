@@ -1,6 +1,7 @@
 import React from 'react'
 import Tp1 from './tr1/Tp1'
-import Tr4 from './tr1/tr4/tr4';
+import Tr4 from './tr1/tr4/Tr4';
+
 
 
 
@@ -13,7 +14,7 @@ const RequestOnline1 = () => {
 
             <div>
                 <hr/>
-                <Tr4 error={null} onChange={()=>{}} onClick={()=>{alert('work')}} placeholder={'Name'}/>
+                <Tr4/>
                 <Tp1/>
 
 
