@@ -10,7 +10,7 @@ type PropsType = {
     count?: number
 }
 
-// компонента для проверки таски
+
 const RoomItem = (props: PropsType) => {
 
     return (
