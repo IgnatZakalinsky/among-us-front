@@ -1,5 +1,5 @@
 import React from 'react'
-import Tr4 from './tr4/Tr4'
+import Buttons from './tr4/Buttons'
 
 // компонента для отображения всех тасок
 const BackOffline9 = () => {
@@ -9,7 +9,7 @@ const BackOffline9 = () => {
       <div>
         <hr/>
         tp4:
-        <Tr4/>
+        <Buttons/>
       </div>
     </div>
   )

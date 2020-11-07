@@ -9,7 +9,7 @@ export type AmazingButtonPropsType = {
 // готовая компонента или функция и т.д.
 const Button: React.FC<AmazingButtonPropsType> = ({children,index, onClick}) => {
   return (
-    <div className={style.buttonBox}>
+    <div className={style.buttonContainer}>
       <button className={style.button} children={children} onClick={()=>onClick(index)}/>
     </div>
   )
