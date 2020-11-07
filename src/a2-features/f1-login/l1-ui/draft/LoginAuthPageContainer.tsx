@@ -12,7 +12,9 @@ const LoginAuthPageContainer = () => {
     return (
         <LoginAuthPage
             error={error}
-            onClick={() => {}}
+            onClick={() => {
+
+            }}
             onChange={e => setName(e.currentTarget.value)}
             placeholder={'name'}
             name={name}

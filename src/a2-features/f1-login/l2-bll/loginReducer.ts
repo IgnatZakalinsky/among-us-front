@@ -78,8 +78,8 @@ export const signIn = (name: string): ThunkAction<void, AppStateType, null, Logi
         dispatch(LoginActions.setSuccess(true))
         // dispatch(ProfileActions.setUser(data))
     } catch (e) {
-        const error = e.response ? e.response.data.error : (e.message + ', more details in the console')
+        // const error = e.response ? e.response.data.error : (e.message + ', more details in the console')
 
-        dispatch(LoginActions.setError(error))
+        dispatch(LoginActions.setError(e))
     }
 }
