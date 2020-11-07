@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 90px;
+    height: 90%;
     width: 99%;
     background-color: antiquewhite;
 }
@@ -20,16 +20,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
-    width: 300px;
+    height: 50%;
+    width: 10%;
 }
 
 .userVoteColors {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
-    width: 300px;
+    height: min-content;
+    width: min-content;
     background-color: white;
     border: 1px solid black;
 }
@@ -37,4 +37,5 @@
 .userWhoVotes {
     height: 20px;
     width: 20px;
+    margin: 5px;
 }

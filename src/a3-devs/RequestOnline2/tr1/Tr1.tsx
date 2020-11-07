@@ -5,14 +5,14 @@ import {VoteUser} from './VoteUser'
 const Tr1 = () => {
     const testOnClick = () => alert('UserDone')
     const userColor ='green'
-    const name = 'User1'
+    const userName = 'User1'
     const voteUsers = ['grey', 'blue', 'pink']
 
     return (
         <>
             <VoteUser onClick={testOnClick}
-                      color={userColor}
-                      name={name}
+                      userColor={userColor}
+                      userName={userName}
                       voteUsers={voteUsers}
             />
         </>
