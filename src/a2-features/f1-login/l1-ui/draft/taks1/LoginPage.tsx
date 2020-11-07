@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import st from './LoginPage.module.css'
 import AmazingInput from '../AmazingInput';
 import AmazingButton from '../AmazingButton';
 
 type LoginAuthPagePropsType = {
-    onChange: (e:any) => void
+    onChange: (e:ChangeEvent<HTMLInputElement>) => void
     placeholder: string
     error: string | null
     onClick: () => void
