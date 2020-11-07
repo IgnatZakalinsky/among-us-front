@@ -11,14 +11,17 @@ type VoteUserPropsType = {
 
 
 export const VoteUser: React.FC<VoteUserPropsType> = ({onClick, userColor, userName, voteUsers}) => {
+
+    const voteUsersToKick = voteUsers.map(u => <div className={style.userWhoVotes} style={{backgroundColor: `${u}`}}/>)
+
     return <>
         <div className={style.user}>
             <div className={style.userBody}>
                 <div className={style.userColorName} style={{backgroundColor: `${userColor}`}}>{userName}</div>
                 <div className={style.userVoteColors}>
-                    {voteUsers.map(u => <div className={style.userWhoVotes} style={{backgroundColor: `${u}`}}/>)}
+                    {voteUsersToKick}
                 </div>
-                <button className={style.userButton} onClick={onClick}>click</button>
+                <button className={style.userButton} onClick={onClick}>kick</button>
             </div>
         </div>
     </>
