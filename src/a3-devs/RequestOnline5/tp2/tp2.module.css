@@ -1,10 +1,11 @@
 .roomItem {
     width: 600px;
-   height: 40px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
 }
-.roomItem > div {
 
+.roomItem > div {
+    width: 100%;
 }
 

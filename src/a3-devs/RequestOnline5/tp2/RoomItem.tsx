@@ -1,5 +1,5 @@
 import React from "react";
-import s from './tp2.module.css'
+import Tp2 from "./Tp2";
 
 type PropsType = {
     user?: any
@@ -11,21 +11,13 @@ type PropsType = {
 }
 
 // компонента для проверки таски
-const Tp2 = (props: PropsType) => {
+const RoomItem = (props: PropsType) => {
 
     return (
-        <div className={s.roomItem}>
-            <div>
-                <p>{props.user}</p>
-                <div className={s.ava}></div>
-            </div>
-            <div>
-                <span>{props.count}</span>
-                <button>{props.status}</button>
-                <button>{props.kick}</button>
-            </div>
-        </div>
+        <>
+            <Tp2/>
+        </>
     )
 }
 
-export default Tp2
+export default RoomItem
