@@ -10,7 +10,7 @@ import KickPage from "../../../a2-features/f5-kick/k1-ui/KickPage";
 
 export const PATH = {
     LOGIN: '/login',
-    ROOM: '/room',
+    ROOM: '/RequestOnline5',
     GAME: '/game',
     CHAT: '/chat',
     KICK: '/kick',
