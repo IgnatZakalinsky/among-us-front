@@ -4,6 +4,7 @@ import style from './User.module.css'
 
 type VoteUserPropsType = {
     id: string
+    disabled: boolean
     kickHandler: () => void
     userColor: string
     userName: string
@@ -11,7 +12,7 @@ type VoteUserPropsType = {
 }
 
 
-export const VoteUser: React.FC<VoteUserPropsType> = ({id, kickHandler, userColor, userName, votes}) => {
+export const VoteUser: React.FC<VoteUserPropsType> = ({id, disabled, kickHandler, userColor, userName, votes}) => {
     return <>
         <div className={style.user}>
             <div className={style.userBody}>
@@ -19,7 +20,7 @@ export const VoteUser: React.FC<VoteUserPropsType> = ({id, kickHandler, userColo
                 <div className={style.userVoteColors}>
                     {votes.map(color => <div key={color} className={style.userWhoVotes} style={{backgroundColor: `${color}`}}/>)}
                 </div>
-                <button className={style.userButton} onClick={kickHandler}>kick</button>
+                <button disabled={disabled} className={style.userButton} onClick={kickHandler}>kick</button>
                 {/*<button className={style.userButton} onClick={kickHandler(id, voteUserId)}>kick</button>*/}
             </div>
         </div>

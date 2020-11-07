@@ -1,12 +1,17 @@
 import React from 'react'
-import {VoteUser} from "./tr1/VoteUser";
-import {useDispatch} from 'react-redux'
+import {VoteUser} from "./tr1/VoteUser"
+import {useDispatch, useSelector} from 'react-redux'
 import {voteUsersTC} from '../k2-bll/kickReducer'
+import {VoteUserTime} from './tr1/VoteUserTime'
+import style from './KickPage.module.css'
+import {AppStateType} from '../../../a1-main/m2-bll/store'
 
 // список игроков, проголосовать за игрока, ни за кого, таймер
 const KickPage = () => {
 
     const dispatch = useDispatch()
+    const isTimeOut = useSelector<AppStateType, boolean>(state => state.kick.isTimeOut)
+
 
 
     const users = [
@@ -32,7 +37,9 @@ const KickPage = () => {
         <>
             users.map, kick, time
             <hr/>
+            <div className={style.voteUserTime}><VoteUserTime/></div>
             {users.map(u => <VoteUser key={u._id}
+                                      disabled={isTimeOut}
                                       id={u._id}
                                       kickHandler={kickHandler}
                                       userColor={u.color}

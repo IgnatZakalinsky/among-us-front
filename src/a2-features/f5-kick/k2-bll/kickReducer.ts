@@ -11,6 +11,7 @@ export const kickInitialState: KickInitialStateType = {
     votes: ['blue', 'yellow'],
     x: 0,
     y: 0,
+    isTimeOut: false,
 }
 
 
@@ -18,13 +19,16 @@ export const kickReducer = (state = kickInitialState, action: KickActionsType): 
     switch (action.type) {
         case 'amount/kick/SET_VOTES':
             return {...state, votes: [...state.votes, action.value]}
+        case 'amount/kick/SET_IS_TIME_OUT':
+            return {...state, isTimeOut: action.value}
         default: return state
     }
 }
 
 
 export const kickActions = {
-    setVotesAC: (value: string) => ({type: 'amount/kick/SET_VOTES', value} as const)
+    setVotesAC: (value: string) => ({type: 'amount/kick/SET_VOTES', value} as const),
+    setIsTimeOutAC: (value: boolean) => ({type: 'amount/kick/SET_IS_TIME_OUT', value} as const),
 }
 
 
@@ -50,5 +54,6 @@ type KickInitialStateType = {
     votes: Array<string>
     x: number
     y: number
+    isTimeOut: boolean
 }
 type KickActionsType = InferActionsType<typeof kickActions>
