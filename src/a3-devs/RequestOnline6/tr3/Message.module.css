@@ -1,0 +1,81 @@
+.message
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 70px;
+}
+
+.MsgCloud
+{
+    position: relative;
+
+    width: 150px;
+    min-height: 150px;
+    margin-left: 35px;
+    padding: 4px 30px 20px;
+
+    color: #f5f6fa;
+    border-radius: 40px;
+    border-bottom-left-radius: 0;
+    background: #16a085;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, .25),
+    -2px -2px 12px 0 rgba(255, 255, 255, .3);
+}
+
+.MsgCloud::before
+{
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border: 0 solid transparent;
+    border-top-width: 45px;
+    border-right: 35px solid #16a085;
+    border-bottom-width: 0;
+}
+
+.MsgCloud h3
+{
+    color: #f39c12;
+}
+
+.MsgCloud p
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.MsgCloud time
+{
+    font-size: 12px;
+
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+
+    color: #2c3e50;
+}
+
+
+.Message
+{
+    display: flex;
+
+    margin-top: 40px;
+}
+
+.avatar
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 134px;
+    margin-left: 110px;
+
+    border-radius: 50%;
+}

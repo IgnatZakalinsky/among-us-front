@@ -1,9 +1,11 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
 import BackOffline1 from '../../../a3-devs/BackOffline1/BackOffline1'
+import { RequestOnline6 } from '../../../a3-devs/RequestOnline6/RequestOnline6'
 
 export const ELSE_PATH = [
     {path: '/BackOffline1', Component: BackOffline1},
+    {path: '/RequestOnline6', Component: RequestOnline6}
     // добавить в массив себя
 
 ]
