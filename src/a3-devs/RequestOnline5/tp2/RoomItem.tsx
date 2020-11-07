@@ -1,5 +1,5 @@
 import React from "react";
-import Tp2 from "./Tp2";
+import s from './tp2.module.css'
 
 type PropsType = {
     user?: any
@@ -14,9 +14,17 @@ type PropsType = {
 const RoomItem = (props: PropsType) => {
 
     return (
-        <>
-            <Tp2/>
-        </>
+        <div className={s.roomItem}>
+            <div>
+                <p>{props.user}</p>
+                <div className={s.ava}></div>
+            </div>
+            <div>
+                <span>{props.count}</span>
+                <button>{props.status}</button>
+                <button>{props.kick}</button>
+            </div>
+        </div>
     )
 }
 
