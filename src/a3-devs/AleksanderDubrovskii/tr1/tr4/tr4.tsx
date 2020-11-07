@@ -1,5 +1,4 @@
 import React from 'react';
-import AmazingButton from '../../tp1/AmazingButton';
 
 type Tr4PropsType = {
     onChange: () => void
@@ -17,7 +16,7 @@ const Tr4 = (props: Tr4PropsType) => {
         <>
             <div><input onChange={props.onChange}/></div>
             {props.error ? <div>{props.error}</div> : null}
-            <AmazingButton onClick={props.onClick}>{props.buttonName}</AmazingButton>
+           <button type={'submit'} onClick={props.onClick}> {props.buttonName}</button>
         </>
     );
 };
