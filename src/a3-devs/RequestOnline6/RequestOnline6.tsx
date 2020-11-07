@@ -1,18 +1,19 @@
 import React from 'react'
-import Tp1 from './tp1/Tp1'
+import {Tp3} from "./tp3/Tp3";
 
 // компонента для отображения всех тасок
-const BackOffline1 = () => {
+
+export const RequestOnline6 = () => {
+
     return (
         <div>
 
             <div>
                 <hr/>
-                tp1:
-                <Tp1/>
+                tp3:
+                <Tp3/>
+
+
             </div>
         </div>
-    )
-}
-
-export default BackOffline1
+    )}
