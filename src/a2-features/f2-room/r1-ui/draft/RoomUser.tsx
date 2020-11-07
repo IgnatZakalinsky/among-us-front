@@ -4,7 +4,7 @@ import s from './tp2.module.css'
 type PropsType = {
     user: string
     onClick: () => void
-    color?: any
+    color: string
     status: string
     kick: () => void
     disCount: number
@@ -15,13 +15,13 @@ const RoomUser = (props: PropsType) => {
 
     return (
         <div className={s.roomItem}>
-            <div>
-                <p>{props.user}</p>
+            <div style={{width: '100px'}}>
+                <span>{props.user}</span>
                 <div style={{background: props.color, height: '20px', width: '20px'}}/>
             </div>
-            <div>
+            <div style={{width: '400px'}}>
                 <span>{props.disCount}</span>
-                <button onClick={props.kick} >kick</button>
+                <button onClick={props.kick}>kick</button>
                 <button onClick={props.onClick}>{props.status}</button>
             </div>
         </div>
