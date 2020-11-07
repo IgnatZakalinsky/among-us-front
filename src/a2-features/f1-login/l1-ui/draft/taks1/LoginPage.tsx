@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 import st from './LoginPage.module.css'
 import AmazingInput from '../AmazingInput';
 import AmazingButton from '../AmazingButton';
 
 type LoginAuthPagePropsType = {
-    onChange: () => void
+    onChange: (e:ChangeEvent<HTMLInputElement>) => void
     placeholder: string
     error: string | null
     onClick: () => void
@@ -22,7 +22,7 @@ const LoginAuthPage = (props: LoginAuthPagePropsType) => {
             </div>
 
             <span>Введите ваше имя:</span>
-            <AmazingInput placeholder={props.placeholder} value={props.name} onChange={()=>{}}/>
+            <AmazingInput placeholder={props.placeholder} value={props.name} onChange={props.onChange}/>
             {props.error ? <div>{props.error}</div> : null}
             <div>
             <AmazingButton onClick={props.onClick} type={'submit'}>Login</AmazingButton>

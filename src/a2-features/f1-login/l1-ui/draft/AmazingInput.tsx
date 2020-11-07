@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 
 type AmazingInputPropsType = {
-    onChange: () => void
+    onChange: (e:ChangeEvent<HTMLInputElement>) => void
     placeholder: string
     value: string
 

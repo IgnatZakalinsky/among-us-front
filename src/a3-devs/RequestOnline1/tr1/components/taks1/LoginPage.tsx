@@ -17,8 +17,8 @@ const LoginAuthPage = (props: LoginAuthPagePropsType) => {
     return (
         <div className={st.wrapper}>
             <div className={st.header}>
-                <div>Among Us</div>
-                <div>v1</div>
+                <div className={st.gameName}>Among Us</div>
+                <div className={st.version}>v1</div>
             </div>
 
             <span>Введите ваше имя:</span>
