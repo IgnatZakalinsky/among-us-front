@@ -7,22 +7,22 @@ type PropsType = {
     color?: any
     status?: string
     kick?: string
+    count?: number
 }
 
 // компонента для проверки таски
 const Tp2 = (props: PropsType) => {
-    const testOnClick = () => alert('!')
 
     return (
         <div className={s.roomItem}>
             <div>
                 <p>{props.user}</p>
-                <div></div>
+                <div className={s.ava}></div>
             </div>
             <div>
-                <span>{}</span>
-                <button >{props.status}</button>
-                <button >{props.kick}</button>
+                <span>{props.count}</span>
+                <button>{props.status}</button>
+                <button>{props.kick}</button>
             </div>
         </div>
     )
