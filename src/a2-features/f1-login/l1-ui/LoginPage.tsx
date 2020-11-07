@@ -1,13 +1,13 @@
 import React from 'react'
-import LoginContainer from './u1-login/LoginContainer'
 import LoginSettingsContainer from './u2-login-settings/LoginSettingsContainer'
+import LoginAuthPageContainer from "./draft/LoginAuthPageContainer";
 
 // страница входа
 // компонента, отвечающая за позиционирование контейнеров страницы
 const LoginPage = () => {
     return (
         <div>
-            <LoginContainer/>
+            <LoginAuthPageContainer/>
 
             <LoginSettingsContainer/>
         </div>

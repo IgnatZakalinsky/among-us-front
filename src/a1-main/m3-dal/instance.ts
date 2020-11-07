@@ -9,4 +9,4 @@ export const instance = axios.create({
     // withCredentials: true,
 })
 
-export const socket = socketIo(baseURL)
+export const socket = socketIo('http://localhost:7542/')

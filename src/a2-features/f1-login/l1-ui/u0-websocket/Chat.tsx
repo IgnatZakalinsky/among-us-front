@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import {socket} from '../../../../a1-main/m3-dal/instance'
+// import {soc ket} from '../../../../a1-main/m3-dal/instance'
 let id = "0";
 
 const Chat = () => {
@@ -9,28 +9,28 @@ const Chat = () => {
 
     ////////////////////////////
 
-    useEffect(() => {
-        socket.on('init-messages-published', (messages: any[]) => {
-            setM(messages);
-        });
-
-        socket.on('new-message-sent', (message: any) => {
-            setM((m) => [...m, message]);
-        });
-
-        socket.emit("init", id, (answer: string) => alert(answer));
-
-    }, []);
+    // useEffect(() => {
+    //     socket.on('init-messages-published', (messages: any[]) => {
+    //         setM(messages);
+    //     });
+    //
+    //     socket.on('new-message-sent', (message: any) => {
+    //         setM((m) => [...m, message]);
+    //     });
+    //
+    //     socket.emit("init", id, (answer: string) => alert(answer));
+    //
+    // }, []);
 
     ////////////////////////////
 
-    const send = () => {
-        socket.emit("client-message-sent", v, (answer: string) => alert(answer));
-        setV("");
-    }
-    const sendName = () => {
-        socket.emit("client-name-sent", "Ignat", (answer: string) => alert(answer));
-    }
+    // const send = () => {
+    //     socket.emit("client-message-sent", v, (answer: string) => alert(answer));
+    //     setV("");
+    // }
+    // const sendName = () => {
+    //     socket.emit("client-name-sent", "Ignat", (answer: string) => alert(answer));
+    // }
 
     /////////////////////////////////////////////////////////
 
@@ -54,10 +54,10 @@ const Chat = () => {
 
             <textarea value={v} onChange={e => {
                 setV(e.target.value);
-                socket.emit('client-typed',)
+                // socket.emit('client-typed',)
             }}/>
-            <button onClick={send}>send</button>
-            <button onClick={sendName}>send name</button>
+            {/*<button onClick={send}>send</button>*/}
+            {/*<button onClick={sendName}>send name</button>*/}
 
         </div>
     );
