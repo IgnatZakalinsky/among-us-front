@@ -1,11 +1,12 @@
 .roomItem {
-    width: 600px;
-    height: 40px;
+    border:4px solid black;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
-
-.roomItem > div {
-    width: 100%;
+.roomItem > div{
+    display: flex;
+    justify-content: space-around;
 }
 
