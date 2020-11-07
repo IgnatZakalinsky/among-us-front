@@ -1,7 +1,6 @@
+import { ThunkAction } from 'redux-thunk'
 import {InferActionsType} from '../../../a1-main/m2-bll/actions'
-import {ThunkAction} from 'redux-thunk'
 import {AppStateType} from '../../../a1-main/m2-bll/store'
-import {LoginAPI} from '../l3-dal/LoginAPI'
 
 export type LoginStateType = {
     loading: boolean
@@ -63,6 +62,7 @@ export const LoginActions = {
         type: 'login/SET_ERROR',
         error,
     } as const),
+
 }
 
 export const signIn = (name: string): ThunkAction<void, AppStateType, null, LoginActionsType> => async (
@@ -72,8 +72,8 @@ export const signIn = (name: string): ThunkAction<void, AppStateType, null, Logi
     dispatch(LoginActions.setLoading(true))
 
     try {
-        const data = await LoginAPI.signIn(name)
-        console.log('LoginAPI.signIn: ', data)
+        // const data = await LoginAPI.signIn(name)
+        // console.log('LoginAPI.signIn: ', data)
 
         dispatch(LoginActions.setSuccess(true))
         // dispatch(ProfileActions.setUser(data))
