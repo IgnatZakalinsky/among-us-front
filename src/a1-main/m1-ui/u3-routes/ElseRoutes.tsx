@@ -4,6 +4,7 @@ import BackOffline1 from '../../../a3-devs/BackOffline1/BackOffline1'
 
 export const ELSE_PATH = [
     {path: '/BackOffline1', Component: BackOffline1},
+    {Component: () => <div/>},
     // добавить в массив себя
 
 ]
