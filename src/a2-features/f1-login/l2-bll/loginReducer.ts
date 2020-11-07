@@ -63,7 +63,6 @@ export const LoginActions = {
         type: 'login/SET_ERROR',
         error,
     } as const),
-
 }
 
 export const signIn = (name: string): ThunkAction<void, AppStateType, null, LoginActionsType> => async (
