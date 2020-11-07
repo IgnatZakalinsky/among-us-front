@@ -1,9 +1,10 @@
 import React, {FC} from 'react'
 import s from './Message.module.css'
 export type MessageType = {
-    userColor: string,
-    name: string,
-    message: string,
+    id: string
+    userColor: string
+    name: string
+    message: string
     time: string
 }
 
